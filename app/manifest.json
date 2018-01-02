@@ -1,0 +1,21 @@
+{
+  "name": "autoScroll",
+  "version": "0.0.1",
+  "manifest_version": 2,
+  "description": "page auto scroll.",
+  "icons": {
+    "128": "images/icon-128.png"
+  },
+  "default_locale": "en",
+  "background": {
+    "scripts": [
+      "scripts/chromereload.js",
+      "scripts/background.js"
+    ]
+  },
+  "permissions": ["tabs", "*://*/*"],
+  "page_action": {
+    "default_title": "autoScroll",
+    "default_popup": "popup.html"
+  }
+}
