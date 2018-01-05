@@ -12,6 +12,7 @@ var scrollFn = function(value) {
   return `
     var speed = ${value / 10};
     var i = window.scrollY;
+    clearTimeout(autoScrollTimeId)
     var autoScrollTimeId = setInterval(function() {
       i = i + speed
       if (window.scrollY > i) {
